@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="bg-dark" class="roboto-mono">
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <img src="./assets/css/img/favicon.ico " alt="SuperHero" width="40" height="30" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#">SuperHero</a>
+          </a>
+        </div>
+      </nav>
+   </header>
+
+
+<main>
+
+
+
+    <section class="container">
+        <div class="madimi-one-regular p-5">
+            <img class="imagsuperhero" src="./assets/css/img/sh1.jpg" alt="SuperHero">
+            <h2>Encuentra tu SuperHero</h2>
+        </div>
+    </section>
+
+   <h3>Ingresa el número del SuperHero a buscar </h3>
+   <form id="formSh">
+    <section class="madimi-one-regular">
+    <input type="text" id="userSh">
+    <div class="valid-feedback mb-2">
+        ¡Listo!
+    </div>
+    <div class="invalid-feedback mb-2">
+        Solo números mayores a 0.
+      </div>
+    <button class="btn bg-danger" type="submit">Buscar</button>
+    </section>
+    </form>  
+    
+    
+    <div class="container p-3">
+    
+        <section class="row">
+            <article class="col-12-md-6" id="resultSh">
+ 
+             <div class="card">
+                 <img src="" alt="" class="card-img-top">
+             <div class="card-body">
+                 <h5>Name:</h5>
+ 
+             </div>
+             <ul class="list-group list-group-flush">
+                 <li class="list-group-item">Base experience</li>
+                 <li class="list-group-item">heigth</li>
+                 <li class="list-group-item">weigth</li>
+                 <li class="list-group-item">types:</li>
+               </ul>
+ 
+             </div>
+            </article>
+            <article class="col-6-md-6" style="height: 370px; width: 600px " id="containerGraph">
+                </div>
+               </article>
+         </section> 
+    </div>
+   </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
