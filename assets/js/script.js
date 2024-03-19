@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    const btnInfo = $(".btn")
 
     const formularioSh = $("#formSh")
     const inputSh = $("#userSh")
@@ -47,25 +46,22 @@ $(document).ready(function () {
 
                 resultadoSh.html(`
             <div class="card" style="width: 25rem">
-                <img src="${mySuperH.image}" 
-                 alt="" class="card-img-top h-5%">
-             <div class="card-body">
-                 <h5>Name: ${mySuperH.name}</h5>
+                <img src="${mySuperH.image}" alt="supehero" class="card-img-top h-5%">
+                <div class="card-body">
+                    <h5>Nombre: ${mySuperH.name}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Conexiones: ${mySuperH.connections}</li>
+                    <li class="list-group-item">Primera aparición: ${mySuperH.firstappearance}</li>
+                    <li class="list-group-item">Altura: ${mySuperH.height}</li>
+                    <li class="list-group-item">Peso: ${mySuperH.weight}</li>
+                    <li class="list-group-item">Alianzas: ${mySuperH.aliases}</li>
+                </ul>
 
-             </div>
-             <ul class="list-group list-group-flush">
-                 <li class="list-group-item">Conexiones: ${mySuperH.connections}</li>
-                 <li class="list-group-item">Primera aparición: ${mySuperH.firstappearance}</li>
-                 <li class="list-group-item">Altura: ${mySuperH.height}</li>
-                 <li class="list-group-item">Peso: ${mySuperH.weight}</li>
-                   <li class="list-group-item">Alianzas: ${mySuperH.aliases}</li>
-               </ul>
-
-             </div>`)
+            </div>`)
 
 
-                const dataPoints = Array.isArray(mySuperH.powerstats)
-                    ? mySuperH.powerstats.map((stat) => ({
+                const dataPoints = Array.isArray(mySuperH.powerstats)? mySuperH.powerstats.map((stat) => ({
                         label: stat.stat.name,
                         y: stat.base_stat
                     }))
@@ -89,7 +85,7 @@ $(document).ready(function () {
                     ]
                 };
 
-                $("#containerGraph").CanvasJSChart(options)
+            $("#containerGraph").CanvasJSChart(options)
 
 
             },
